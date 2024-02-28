@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0c6bde25;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container-card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-card .card {
+    border: 1px solid black;
+    width: 40%;
+    border-radius: 10px;
+    height: 78%;
+    box-shadow: 10px 10px 10px 5px black;
+}
+
+.container-card .card .container-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+.container-card .card .container-image .card-avatar {
+    width: 95%;
+    border-radius: 10px;
+    height: 300px;
+}
+.container-card .card .card-body {
+    width: 95%;
+    margin: auto;
+}
+.container-card .card .card-body h2 {
+    font-size: 17px;
+    color: #0C6BDE;
+}
+.container-card .card .card-body p {
+    font-size: 30px;
+    width: 100%;
+    text-align: justify;
+}
+.container-card .card .card-body .container-span {
+    width: 90%;
+    margin: auto;
+}
+.container-card .card .card-body .container-span .italic-span {
+    font-size: 22px;
+    font-weight: 200;
+    font-style: italic;
+    margin: auto;
+}
+.container-card .card .containerInformation {
+    width: calc(100% - 10px);
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.container-card .card .containerInformation button {
+    height: 30px;
+    width: 125px;
+    text-align: center;
+    background-color: #0C6BDE;
+    color: #FFFFFF;
+    border-radius: 30px;
+    border: none;
+}
+/** FONT A REVOIR */
+@media screen and (max-width: 376px) {
+    .container-card {
+        margin: 2% auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 2%;
+        align-items: center;
+    }
+    .container-card .card {
+        width: 100%;
+        box-shadow: 10px 10px 10px 5px black;
+    }
+    .container-card .container-image {
+        width: 95% !important;
+        height: 30% !important;
+        margin: auto !important;
+    }
+    .container-card .container-image .card-avatar {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .container-card .card-body h1 {
+        font-size: 22px !important;
+    }
+    .container-card .card-body h2 {
+        font-size: 15px !important;
+    }
+    .container-card .card-body p {
+        font-size: 19px !important;
+    }
+    .container-card .card-body .italic-span {
+        font-size: 12px !important;
+        font-style: italic;
+    }
+    .container-card .card .containerInformation {
+        width: calc(100% - 11px);
+        padding: 5px !important;
+        height: 64px !important;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+}
